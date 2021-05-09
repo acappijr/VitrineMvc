@@ -1,0 +1,17 @@
+﻿@model IEnumerable<VitrineMvc.Models.Produto>
+
+@{
+    ViewData["Title"] = "Lista de Produtos";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Novo Produto</a>
+</p>
+<partial name="_ListaProdutos" />
+
+<p>
+    <a class="btn btn-sm btn-info order-button" asp-action="ExportarExcel">Exportar para Excel</a>
+</p>
